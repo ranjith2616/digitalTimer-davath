@@ -1,0 +1,5 @@
+/* Write your CSS here */
+.timer-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  height: 100vh;
+}

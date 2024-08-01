@@ -1,5 +1,121 @@
 /* Write your CSS here */
+body {
+  margin: 0;
+}
+.bg-container {
+  background: linear-gradient(to right, #ffffff, #cffcf1);
+  padding: 10px;
+  height: 100vh;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+  align-items: center;
+}
+.heading {
+  color: #1e293b;
+}
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vh;
+}
 .timer-card {
   background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
-  height: 100vh;
+  height: 50vh;
+  width: 50vh;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.time-position {
+  color: #1e293b;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'roboto';
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 60px;
+  height: 120px;
+  width: 120px;
+  text-align: center;
+  color: #00d9f5;
+  margin-left: 50px;
+}
+.play-pause-reset-btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 10px;
+  width: 15vh;
+}
+.icon {
+  height: 26px;
+}
+.play-pause-reset-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plus-minus-btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  color: #1e293b;
+  font-weight: 800;
+  font-size: 20px;
+}
+.plus-minus-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 18vh;
+}
+.timer-limit {
+  color: #1e293b;
+  font-size: 20px;
+  font-weight: 500;
+  background: linear-gradient(to right, #10e3a1, #00d9f5);
+  border-radius: 8px;
+  text-align: center;
+  width: 8vh;
+  padding: 8px;
+}
+.timer-limit-text {
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+.controller-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .timer-container {
+    flex-direction: column;
+    justify-content: start;
+  }
 }
